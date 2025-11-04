@@ -438,3 +438,124 @@ card-image i {
 
 
 }
+
+/* features section */
+.features {
+    background: var(--white);
+    padding: var(--spacing-20) 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-16);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-8);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-100);
+
+}
+
+.feature-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.feature-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-4);
+    font-size: 25px;
+    color: white;
+
+
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--font-size-4xl);
+    columns: var(--gray-900);
+    margin-bottom: var(--spacing-12);
+
+}
+
+
+/* category section */
+.categories {
+    padding: var(--spacing-20) 0;
+    background: var(--gray-50);
+}
+
+.categories-grid {
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-8);
+
+
+}
+
+.category-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    padding: var(--spacing-8);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-100);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+
+
+}
+
+.category-card h3 {
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-3);
+
+}
+
+.category-card p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-6);
+}
+
+.category-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-normal);
+}
+
+.category-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4) var(--spacing-8);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid transparent;
+}
