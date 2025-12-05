@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="icon" type="image/png" href="./logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img class="logo-img" src="./logo.png" alt="" />
+            <span>ALAA ELDIN ALHALLAK</span>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="./index.html" class="nav-link active">صفحة الرئيسية</a>
+            </li>
+            <li><a href="./products.html" class="nav-link">المنتجات</a></li>
+            <li><a href="./contact.html" class="nav-link">اتصل بنا</a></li>
+          </ul>
+          <div class="nav-icons">
+            <a href="" class="nav-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a href="" class="nav-icon"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a href="" class="nav-icon"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>اتصل بنا</h1>
+        <p>نحن هنا لمساعدتك والإجابة على جميع أسئلتك</p>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info animate-fadeInLeft">
+            <h2>معلومات التواصل</h2>
+            <p>نحن هنا لمساعدتك والإجابة على جميع أسئلتك</p>
+            <div class="contact-cards stagger-children">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>اتصل بنا</h3>
+                  <p>+90 536 629 8316</p>
+                  <p>+90 536 629 8316</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>البريد الإلكتروني</h3>
+                  <p>info@alaaeldinalhallak.com</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>العنوان</h3>
+                  <p>Istanbul, Turkey</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>الوقت</h3>
+                  <p>الأحد - الخميس: 9:00 - 18:00</p>
+                  <p>الجمعة: 9:00 - 13:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-section">
+              <h3>تابعنا على الشبكات الاجتماعية</h3>
+              <div class="social-links">
+                <a class="social-link facebook" href="#"
+                  ><i class="fab fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+                <a class="social-link twitter" href="#"
+                  ><i class="fab fa-twitter"></i><span>Twitter</span></a
+                >
+                <a class="social-link instagram" href="#"
+                  ><i class="fab fa-instagram"></i><span>Instagram</span></a
+                >
+                <a class="social-link youtube" href="#"
+                  ><i class="fab fa-youtube"></i><span>Youtube</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-section animate-fadeInRight">
+            <h2>اتصل بنا</h2>
+            <form action="" class="contact-form">
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="ادخل الاسم"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ادخل البريد الإلكتروني"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="ادخل الرسالة"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">ارسل</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>كيف يمكنني الطلب؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
+                أعلاه
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>كيف يمكنني الطلب؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
+                أعلاه
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>كيف يمكنني الطلب؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
+                أعلاه
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>كيف يمكنني الطلب؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
+                أعلاه
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- map section -->
+
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">الخريطة</h2>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>العنوان</h3>
+            <p>Istanbul, Turkey</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>اشترك في نشرتنا الإخبارية</h2>
+          <p>احصلي على أحدث العروض والخصومات حصرياً</p>
+          <form action="" class="newsletter-form">
+            <input type="text" placeholder="ادخل بريدك الإلكتروني" />
+            <button type="submit">اشترك</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ALAA ELDIN ALHALLAK</h3>
+            <p>وجهتك الأولى للأزياء الراقية والعصرية</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>روابط سريعة</h3>
+            <ul class="footer-links">
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#">المنتجات</a></li>
+              <li><a href="#">اتصل بنا</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>خدمة العملاء</h3>
+            <ul>
+              <li><a href="#">اتصل بنا</a></li>
+              <li><a href="#">الشحن</a></li>
+              <li><a href="#">الدفع</a></li>
+              <li><a href="#">الإرجاع</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>تواصل معنا</h4>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a class="phone-link" href="https://wa.me/+90 536 629 8316 ">
+                +90 536 629 8316
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a class="email-link" href="mailto: info@alaaeldinalhallak.com ">
+                info@alaaeldinalhallak.com
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="address-link">Istanbul, Turkey</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ALAA ELDIN ALHALLAK. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
