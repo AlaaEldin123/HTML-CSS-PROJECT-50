@@ -1,312 +1,314 @@
 <!DOCTYPE html>
-<html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./animation.css" />
-    <link rel="icon" type="image/png" href="./logo.png" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <img class="logo-img" src="./logo.png" alt="" />
-            <span>ALAA ELDIN ALHALLAK</span>
-          </div>
-          <ul class="nav-menu">
-            <li>
-              <a href="./index.html" class="nav-link active">صفحة الرئيسية</a>
-            </li>
-            <li><a href="./products.html" class="nav-link">المنتجات</a></li>
-            <li><a href="./contact.html" class="nav-link">اتصل بنا</a></li>
-          </ul>
-          <div class="nav-icons">
-            <a href="" class="nav-icon"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-            <a href="" class="nav-icon"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a href="" class="nav-icon"><i class="fa-solid fa-user"></i></a>
-          </div>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - ALAA ELDIN ALHALLAK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="logo.png" alt="ALAA ELDIN ALHALLAK Logo" class="logo-img">
+          <span>ALAA ELDIN ALHALLAK</span>
         </div>
-      </nav>
-    </header>
-
-    <section class="page-header">
-      <div class="container">
-        <h1>اتصل بنا</h1>
-        <p>نحن هنا لمساعدتك والإجابة على جميع أسئلتك</p>
-      </div>
-    </section>
-
-    <!-- contact section -->
-
-    <section class="contact">
-      <div class="container">
-        <div class="contact-content">
-          <div class="contact-info animate-fadeInLeft">
-            <h2>معلومات التواصل</h2>
-            <p>نحن هنا لمساعدتك والإجابة على جميع أسئلتك</p>
-            <div class="contact-cards stagger-children">
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-details">
-                  <h3>اتصل بنا</h3>
-                  <p>+90 536 629 8316</p>
-                  <p>+90 536 629 8316</p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-details">
-                  <h3>البريد الإلكتروني</h3>
-                  <p>info@alaaeldinalhallak.com</p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-details">
-                  <h3>العنوان</h3>
-                  <p>Istanbul, Turkey</p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="contact-details">
-                  <h3>الوقت</h3>
-                  <p>الأحد - الخميس: 9:00 - 18:00</p>
-                  <p>الجمعة: 9:00 - 13:00</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="social-section">
-              <h3>تابعنا على الشبكات الاجتماعية</h3>
-              <div class="social-links">
-                <a class="social-link facebook" href="#"
-                  ><i class="fab fa-facebook"></i>
-                  <span>Facebook</span>
-                </a>
-                <a class="social-link twitter" href="#"
-                  ><i class="fab fa-twitter"></i><span>Twitter</span></a
-                >
-                <a class="social-link instagram" href="#"
-                  ><i class="fab fa-instagram"></i><span>Instagram</span></a
-                >
-                <a class="social-link youtube" href="#"
-                  ><i class="fab fa-youtube"></i><span>Youtube</span></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-section animate-fadeInRight">
-            <h2>اتصل بنا</h2>
-            <form action="" class="contact-form">
-              <div class="form-group">
-                <label for="name">الاسم</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="ادخل الاسم"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">البريد الإلكتروني</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="ادخل البريد الإلكتروني"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">الرسالة</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="ادخل الرسالة"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">ارسل</button>
-            </form>
-          </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="products.html" class="nav-link">المنتجات</a></li>
+          <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <!-- FAQ section -->
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>اتصل بنا</h1>
+      <p>نحن هنا لمساعدتك في أي وقت</p>
+    </div>
+  </section>
 
-    <section class="faq">
-      <div class="container">
-        <h2 class="section-title">الأسئلة الشائعة</h2>
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <!-- Contact Info -->
+        <div class="contact-info animate-fadeInLeft">
+          <h2>معلومات التواصل</h2>
+          <p>نحن سعداء لسماع منك! تواصل معنا عبر أي من الطرق التالية:</p>
 
-        <div class="faq-grid">
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>كيف يمكنني الطلب؟</h3>
-              <i class="fas fa-chevron-down"></i>
+          <div class="contact-cards stagger-children">
+            <div class="contact-card hover-lift">
+              <div class="contact-icon animate-pulse">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>هاتف</h3>
+                <p>+966 50 123 4567</p>
+                <p>+966 11 234 5678</p>
+              </div>
             </div>
-            <div class="faq-answer">
-              <p>
-                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
-                أعلاه
-              </p>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>البريد الإلكتروني</h3>
+                <p>info@fashionstore.com</p>
+                <p>support@fashionstore.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>العنوان</h3>
+                <p>شارع الملك فهد</p>
+                <p>الرياض، المملكة العربية السعودية</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h3>ساعات العمل</h3>
+                <p>السبت - الخميس: 9:00 ص - 10:00 م</p>
+                <p>الجمعة: 2:00 م - 10:00 م</p>
+              </div>
             </div>
           </div>
 
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>كيف يمكنني الطلب؟</h3>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>
-                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
-                أعلاه
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>كيف يمكنني الطلب؟</h3>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>
-                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
-                أعلاه
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>كيف يمكنني الطلب؟</h3>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>
-                يمكنك الطلب من خلال الموقع أو الاتصال بنا على الرقم الموجود
-                أعلاه
-              </p>
+          <!-- Social Media -->
+          <div class="social-section">
+            <h3>تابعنا على وسائل التواصل الاجتماعي</h3>
+            <div class="social-links">
+              <a href="#" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>فيسبوك</span>
+              </a>
+              <a href="#" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+                <span>إنستغرام</span>
+              </a>
+              <a href="#" class="social-link twitter">
+                <i class="fab fa-twitter"></i>
+                <span>تويتر</span>
+              </a>
+              <a href="#" class="social-link youtube">
+                <i class="fab fa-youtube"></i>
+                <span>يوتيوب</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- map section -->
+        <!-- Contact Form -->
+        <div class="contact-form-section animate-fadeInRight">
+          <h2>أرسل لنا رسالة</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" name="name" required>
+            </div>
 
-    <section class="map-section">
-      <div class="container">
-        <h2 class="section-title">الخريطة</h2>
-        <div class="map-container">
-          <div class="map-placeholder">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>العنوان</h3>
-            <p>Istanbul, Turkey</p>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" required>
+            </div>
 
-    <!-- newsletter section -->
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
 
-    <section class="newsletter">
-      <div class="container">
-        <div class="newsletter-content">
-          <h2>اشترك في نشرتنا الإخبارية</h2>
-          <p>احصلي على أحدث العروض والخصومات حصرياً</p>
-          <form action="" class="newsletter-form">
-            <input type="text" placeholder="ادخل بريدك الإلكتروني" />
-            <button type="submit">اشترك</button>
+            <div class="form-group">
+              <label for="subject">الموضوع</label>
+              <select id="subject" name="subject" required>
+                <option value="">اختر الموضوع</option>
+                <option value="general">استفسار عام</option>
+                <option value="order">استفسار عن الطلب</option>
+                <option value="return">إرجاع المنتج</option>
+                <option value="complaint">شكوى</option>
+                <option value="suggestion">اقتراح</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" rows="6" required placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">أريد الاشتراك في النشرة الإخبارية</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer section -->
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">الأسئلة الشائعة</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>ما هي طرق الدفع المتاحة؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نقبل جميع طرق الدفع الرئيسية بما في ذلك البطاقات الائتمانية، التحويل البنكي، والدفع عند الاستلام.</p>
+          </div>
+        </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>ALAA ELDIN ALHALLAK</h3>
-            <p>وجهتك الأولى للأزياء الراقية والعصرية</p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>كم تستغرق عملية الشحن؟</h3>
+            <i class="fas fa-chevron-down"></i>
           </div>
-          <div class="footer-section">
-            <h3>روابط سريعة</h3>
-            <ul class="footer-links">
-              <li><a href="#">الرئيسية</a></li>
-              <li><a href="#">المنتجات</a></li>
-              <li><a href="#">اتصل بنا</a></li>
-            </ul>
+          <div class="faq-answer">
+            <p>عادة ما تستغرق عملية الشحن من 2-5 أيام عمل داخل المملكة، و5-10 أيام للدول الأخرى.</p>
           </div>
+        </div>
 
-          <div class="footer-section">
-            <h3>خدمة العملاء</h3>
-            <ul>
-              <li><a href="#">اتصل بنا</a></li>
-              <li><a href="#">الشحن</a></li>
-              <li><a href="#">الدفع</a></li>
-              <li><a href="#">الإرجاع</a></li>
-            </ul>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل يمكنني إرجاع المنتج؟</h3>
+            <i class="fas fa-chevron-down"></i>
           </div>
-          <div class="footer-section">
-            <h4>تواصل معنا</h4>
-            <p>
-              <i class="fas fa-phone"></i>
-              <a class="phone-link" href="https://wa.me/+90 536 629 8316 ">
-                +90 536 629 8316
-              </a>
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i>
-              <a class="email-link" href="mailto: info@alaaeldinalhallak.com ">
-                info@alaaeldinalhallak.com
-              </a>
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <span class="address-link">Istanbul, Turkey</span>
-            </p>
+          <div class="faq-answer">
+            <p>نعم، يمكنك إرجاع المنتج خلال 14 يوم من تاريخ الشراء بشرط أن يكون في حالته الأصلية.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل الشحن مجاني؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، الشحن مجاني لجميع الطلبات التي تزيد عن 500 ريال داخل المملكة العربية السعودية.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>كيف يمكنني تتبع طلبي؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>ستتلقى رقم تتبع عبر البريد الإلكتروني بعد إرسال طلبك، يمكنك استخدامه لتتبع حالة الشحن.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل تقدمون خدمة العملاء على مدار الساعة؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، فريق خدمة العملاء متاح على مدار الساعة عبر الهاتف والبريد الإلكتروني لمساعدتك.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">موقعنا</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>خريطة الموقع</p>
+          <span>شارع الملك فهد، الرياض</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>اشترك في نشرتنا الإخبارية</h2>
+        <p>احصلي على أحدث العروض والخصومات حصرياً</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+          <button type="submit">اشترك</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>متجر الأزياء الراقية</h3>
+          <p>وجهتك الأولى للأزياء الراقية والعصرية</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>خدمة العملاء</h4>
+          <ul>
+            <li><a href="#">سياسة الإرجاع</a></li>
+            <li><a href="#">الشحن والتوصيل</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+            <p><i class="fas fa-envelope"></i> info@fashionstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 ALAA ELDIN ALHALLAK. All rights reserved.</p>
+        <p>&copy; 2024 متجر الأزياء الراقية. جميع الحقوق محفوظة.</p>
       </div>
     </div>
-  </body>
+  </footer>
+</body>
+
 </html>

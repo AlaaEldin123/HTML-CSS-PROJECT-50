@@ -1,407 +1,365 @@
 <!DOCTYPE html>
-<html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./animation.css" />
-    <link rel="icon" type="image/png" href="./logo.png" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <img class="logo-img" src="./logo.png" alt="" />
-            <span>ALAA ELDIN ALHALLAK</span>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتجات - ALAA ELDIN ALHALLAK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="logo.png" alt="ALAA ELDIN ALHALLAK Logo" class="logo-img">
+          <span>ALAA ELDIN ALHALLAK</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="products.html" class="nav-link active">المنتجات</a></li>
+          <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>منتجاتنا الراقية</h1>
+      <p>اكتشفي مجموعتنا المتنوعة من الأزياء والإكسسوارات</p>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-category="all">الكل</button>
+        <button class="filter-btn" data-category="dresses">فساتين</button>
+        <button class="filter-btn" data-category="clothes">ملابس يومية</button>
+        <button class="filter-btn" data-category="shoes">أحذية</button>
+        <button class="filter-btn" data-category="accessories">إكسسوارات</button>
+      </div>
+      <div class="sort-options">
+        <select class="sort-select">
+          <option value="default">ترتيب افتراضي</option>
+          <option value="price-low">السعر: من الأقل للأعلى</option>
+          <option value="price-high">السعر: من الأعلى للأقل</option>
+          <option value="newest">الأحدث</option>
+          <option value="popular">الأكثر شعبية</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="container">
+      <div class="products-grid stagger-children">
+        <!-- Product 1 -->
+        <div class="product-card hover-lift card-hover" data-category="dresses">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="فستان أنيق للمناسبات" class="product-img">
+            <div class="product-badge animate-pulse">جديد</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
           </div>
-          <ul class="nav-menu">
-            <li>
-              <a href="./index.html" class="nav-link active">صفحة الرئيسية</a>
-            </li>
-            <li><a href="./products.html" class="nav-link">المنتجات</a></li>
-            <li><a href="./contact.html" class="nav-link">اتصل بنا</a></li>
+          <div class="product-info">
+            <h3>فستان أنيق للمناسبات</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.9)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">299 ريال</span>
+              <span class="old-price">399 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card hover-lift card-hover" data-category="clothes">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="بلوزة عصرية" class="product-img">
+            <div class="product-badge sale">خصم 30%</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>بلوزة عصرية</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(4.2)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">149 ريال</span>
+              <span class="old-price">199 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card hover-lift card-hover" data-category="shoes">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="حذاء رياضي مريح" class="product-img">
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>حذاء رياضي مريح</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.8)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">199 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card hover-lift card-hover" data-category="accessories">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="ساعة يد أنيقة" class="product-img">
+            <div class="product-badge">محدود</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>ساعة يد أنيقة</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">399 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card hover-lift card-hover" data-category="dresses">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="فستان أنيق للمناسبات الرسمية" class="product-img">
+            <div class="product-badge">مميز</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>فستان أنيق للمناسبات الرسمية</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.9)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">459 ريال</span>
+              <span class="old-price">599 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card hover-lift card-hover" data-category="clothes">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="جينز كلاسيكي" class="product-img">
+            <div class="product-badge">الأكثر مبيعاً</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>جينز كلاسيكي</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.9)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">229 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card hover-lift card-hover" data-category="shoes">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="حذاء كعب عالي أنيق" class="product-img">
+            <div class="product-badge">جديد</div>
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>حذاء كعب عالي أنيق</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.8)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">329 ريال</span>
+              <span class="old-price">399 ريال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card hover-lift card-hover" data-category="accessories">
+          <div class="product-image image-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="حقيبة يد فاخرة" class="product-img">
+            <div class="product-overlay">
+              <button class="quick-view btn-animated"><i class="fas fa-eye"></i> عرض سريع</button>
+              <button class="add-to-cart btn-animated"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>حقيبة يد فاخرة</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.6)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">349 ريال</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more">
+        <button class="btn btn-primary">عرض المزيد</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>اشترك في نشرتنا الإخبارية</h2>
+        <p>احصلي على أحدث العروض والخصومات حصرياً</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+          <button type="submit">اشترك</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>متجر الأزياء الراقية</h3>
+          <p>وجهتك الأولى للأزياء الراقية والعصرية</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
           </ul>
-          <div class="nav-icons">
-            <a href="" class="nav-icon"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-            <a href="" class="nav-icon"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a href="" class="nav-icon"><i class="fa-solid fa-user"></i></a>
-          </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- hero section -->
-
-    <section class="page-header">
-      <div class="container">
-        <h1>منتجاتنا الراقية</h1>
-        <p>اكتشفي مجموعتنا المتنوعة من الأزياء والإكسسوارات</p>
-      </div>
-    </section>
-
-    <!-- filter section -->
-
-    <div class="filters">
-      <div class="container">
-        <div class="filter-tabs">
-          <button class="filter-btn active" data-filter="all">الكل</button>
-          <button class="filter-btn" data-filter="clothing">الملابس</button>
-          <button class="filter-btn" data-filter="accessories">
-            الإكسسوارات
-          </button>
-          <button class="filter-btn" data-filter="shoes">الأحذية</button>
-          <button class="filter-btn" data-filter="bags">الأكسسوارات</button>
+        <div class="footer-section">
+          <h4>خدمة العملاء</h4>
+          <ul>
+            <li><a href="#">سياسة الإرجاع</a></li>
+            <li><a href="#">الشحن والتوصيل</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+          </ul>
         </div>
-        <div class="sort-options">
-          <select name="" class="sort-select">
-            <option value="newest">الأحدث</option>
-            <option value="oldest">الأقدم</option>
-            <option value="price-asc">الأقل سعرا</option>
-            <option value="price-desc">الأعلى سعرا</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- products section -->
-    <div class="products">
-      <div class="container">
-        <div class="product-grid stagger-chldren">
-          <!-- product card 1 -->
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card hover-lift card-hover">
-            <div class="product-image iamge-zoom">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOSiSiSDLdYb03yhj9L1qGZ9T3CGPU1iEcA&s"
-                alt=""
-              />
-              <div class="product-badge animate-pulse">جديد</div>
-              <div class="product-overlay">
-                <button class="quick-view btn-animated">عرض سريع</button>
-                <button class="add-to-cart btn-animated">إضافة للسلة</button>
-              </div>
-            </div>
-
-            <div class="product-info">
-              <h3>المنتج 1</h3>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(4.9)</span>
-              </div>
-              <div class="product-price">
-                <span class="current-price">100 دولار</span>
-                <span class="old-price">80 دولار</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer section -->
-
-    <div class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>ALAA ELDIN ALHALLAK</h3>
-            <p>وجهتك الأولى للأزياء الراقية والعصرية</p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="footer-section">
-            <h3>روابط سريعة</h3>
-            <ul class="footer-links">
-              <li><a href="#">الرئيسية</a></li>
-              <li><a href="#">المنتجات</a></li>
-              <li><a href="#">اتصل بنا</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h3>خدمة العملاء</h3>
-            <ul>
-              <li><a href="#">اتصل بنا</a></li>
-              <li><a href="#">الشحن</a></li>
-              <li><a href="#">الدفع</a></li>
-              <li><a href="#">الإرجاع</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>تواصل معنا</h4>
-            <p>
-              <i class="fas fa-phone"></i>
-              <a class="phone-link" href="https://wa.me/+90 536 629 8316 ">
-                +90 536 629 8316
-              </a>
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i>
-              <a class="email-link" href="mailto: info@alaaeldinalhallak.com ">
-                info@alaaeldinalhallak.com
-              </a>
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <span class="address-link">Istanbul, Turkey</span>
-            </p>
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+            <p><i class="fas fa-envelope"></i> info@fashionstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 ALAA ELDIN ALHALLAK. All rights reserved.</p>
+        <p>&copy; 2024 متجر الأزياء الراقية. جميع الحقوق محفوظة.</p>
       </div>
     </div>
-  </body>
+  </footer>
+</body>
+
 </html>
